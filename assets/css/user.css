@@ -1,0 +1,89 @@
+img {
+    display: block;
+    width: 120px;
+    border-radius: 50%;
+    height: 100px;
+    height: 120px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px #235bc3;
+    transition: all .5s ease;
+}
+
+.profile-column {
+    /* flex: 1; */
+    justify-self: center;
+}
+
+.Logout {
+    font-size: 24px;
+    padding: 10px 20px;
+    box-shadow: none;
+    background-color: #235bc3;
+    color: white;
+}
+
+.btn-update {
+    background-color: transparent !important;
+    box-shadow: 0 0 0 1px black;
+    color: black;
+}
+
+.Logout:hover {
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 0 0 1px black;
+}
+
+.user {
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media screen and (max-width: 425px) {
+    .user {
+        padding-top: 70px;
+    }
+}
+
+.user-info {
+    border-radius: .55em;
+    line-height: 1.5;
+    background-color: #e8e8e8;
+    padding: 1em;
+}
+
+.name-info {
+    /* max-width: 100px; */
+    color: #333;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.uppercase {
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .profile-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .Logout {
+        padding: 5px 10px;
+    }
+}

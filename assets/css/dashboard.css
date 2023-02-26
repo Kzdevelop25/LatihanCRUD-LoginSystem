@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 1em;
+    gap: 1.5em;
+    background-color: #236bc3;
+    height: 20vh;
+    color: white;
+}
+
+.header-heading {
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    position: relative;
+    /* background-color: #236bc3; */
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: .75em 1.5em;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: .55em;
+    border: none;
+}
+
+.Add {
+    background-color: #236bc3;
+    color: white;
+    opacity: 1;
+    transition: ease-in .175s;
+}
+
+.Add:hover {
+    background-color: #236bc393;
+    color: white;
+}
+
+.Tambah {
+    display: block;
+    margin-top: 2em;
+    background-color: #236bc3;
+    color: white;
+    opacity: .9;
+    padding: .75em 8.7em;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tambah:hover {
+    opacity: 1;
+}
+
+.Logout {
+    background-color: transparent;
+    box-shadow: 0 0 0 1px black;
+    color: black;
+}
+
+.Logout:hover {
+    background-color: black;
+    color: white;
+    transition: ease-out .125s;
+}
+
+.back {
+    background-color: white;
+}
+
+.addContainer {
+    padding: 5rem 0 2rem;
+}
+
+.Add-Component {
+    padding: 2rem 0;
+}
+
+.addBox {
+    /* background-color: #236bc393; */
+    margin-bottom: .55rem;
+    display: flex;
+    /* gap: 1em; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addBox input {
+    padding: .55rem;
+    font-size: 14px;
+    margin-left: 4.35em;
+    width: 90%;
+}
+
+.addBox input[name="umur"] {
+    margin-left: 4.9em;
+}
+
+.addBox select {
+    margin-left: 3em;
+    width: 90%;
+    text-align: center;
+}
+
+.updateBox select{
+    text-align: start;
+}
+
+.addBox select[name='sekolah'] {
+    padding: .55rem 1rem;
+    font-size: 14px;
+    margin-left: 3.1em;
+}
+
+.addBox select[name='jurusan'] {
+    padding: .55rem .08rem;
+    font-size: 14px;
+}
+
+.addBox select[name='kelas'] {
+    padding: .55rem 4.9rem;
+    margin-left: 4.9em;
+    width: 9 0%;
+    font-size: 14px;
+}
+
+.addBox input:focus {
+    /* border: none; */
+    outline: none;
+}
+
+.addBox label {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+@media screen and (max-width: 425px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .addBox select {
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 333px) {
+    .Tambah {
+        padding: .75em 8em;
+    }
+
+    .addBox label {
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+
+
+}
+
+.btn-view {
+    background-color: rgb(65, 65, 223);
+    color: white;
+}
+
+.btn-update {
+    background-color: rgb(238, 116, 9);
+    color: white;
+}
+
+.btn-delete {
+    background-color: rgb(161, 29, 6);
+    color: white;
+}
+
+/* Siswa Component */
+.action-component {
+    /* background-color: #236bc3 !important; */
+    display: flex;
+    gap: 1rem;
+}
+
+.siswaTable {
+    margin: 1em auto;
+    overflow: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead{
+    background-color: rgb(5, 126, 55);
+    border-top-left-radius: .55em;
+    border-top-right-radius: .55em;
+}
+
+table thead th {
+    text-align: start;
+    background-color: rgb(5, 126, 55);
+    color: white;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0, .6);
+    padding: .5em 1em;
+}
+
+table tbody tr {
+    border: none;
+    border-bottom: 1.5px solid black;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background-color: #f0f0f0;
+}
+
+table tbody tr td {
+    padding: 1em;
+}

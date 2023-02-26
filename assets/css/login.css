@@ -1,0 +1,127 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #e8e8e8;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: .6em;
+}
+
+form {
+    margin-top: 15px;
+}
+
+form .login {
+    display: flex;
+    gap: .4em;
+    margin-bottom: 1.5em;
+    flex-direction: column;
+}
+
+.login label {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.login label[for="users"]{
+    width: 100px;
+}
+
+.login .pass {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login input {
+    caret-color: #236bc3;
+    color: #236bc3;
+    background-color: rgba(255, 255, 255, .5);
+    border-width: 1.5px;
+    border-style: dashed;
+    padding: .45rem;
+    border-radius: .35em;
+    outline: none;
+    box-sizing: none;
+    display: block;
+    max-width: 350px;
+}
+
+.login input:focus {
+    border-color: #236bc3;
+}
+
+.verify {
+    padding: .6rem 0;
+}
+
+.verify label {
+    font-size: 16px;
+    color: #333;
+}
+
+.verify input {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.btn {
+    border-radius: .35em;
+    cursor: pointer;
+    padding: 8px 16px;
+    display: block;
+    width: 350px;
+    font-size: 16px;
+    border: none;
+    background-color: #236bc3;
+    color: white;
+    transition: .5s ease;
+    margin: 1rem 0;
+}
+
+.btn:hover {
+    background-color: #236bc3c3;
+}
+
+.signup {
+    padding: .6rem 0;
+    font-size: 16px;
+}
+
+.signup a {
+    text-decoration: none;
+}
+
+.message {
+    background-color: #ce1c1c;
+    border-radius: .35em;
+    /* width: 350px; */
+    margin: auto;
+    padding: .5em 5rem;
+    color: #ffffff;
+    text-align: center;
+}
